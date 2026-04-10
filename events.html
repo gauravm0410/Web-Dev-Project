@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CMS - Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CLUB MANAGEMENT SYSTEM</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Management</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Members</a></li>
+                        <li><a class="dropdown-item" href="events.html">Events</a></li>
+                        <li><a class="dropdown-item" href="attendance.html">Attendance</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="events">
+        <h2>Events</h2>
+        <div class="card">
+            <form id="eventForm">
+                <div class="form-row">
+                    <label>Event Name</label>
+                    <input type="text" id="eventName" placeholder="HP Event" required>
+                </div>
+                <div class="form-row">
+                    <label>Date</label>
+                    <input type="date" id="eventDate" required>
+                </div>
+                <div class="form-row">
+                    <label>Time</label>
+                    <input type="time" id="eventTime" required>
+                </div>
+                <div class="form-row">
+                    <label>Description</label>
+                    <textarea id="eventDesc" placeholder="Collaboration of IEEE-TEMS with HP."></textarea>
+                </div>
+                <button type="submit">Add Event</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="eventTable"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 IEEE - TEMS Club Management System done by: Gaurav - 24BDS0100</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+/* Professional Deep Indigo and Slate Theme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+}
+
+header {
+  background: #1a237e;
+  /* Deep Indigo */
+  color: white;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Nav Background */
+.custom-nav {
+  background: #283593 !important;
+  /* Slightly lighter indigo */
+  padding: 10px !important;
+}
+
+.nav-link {
+  font-weight: 500 !important;
+  margin: 0 10px;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff !important;
+}
+
+section {
+  padding: 40px 10%;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1a237e;
+  border-left: 5px solid #3f51b5;
+  padding-left: 15px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.form-row label {
+  width: 160px;
+  font-weight: 600;
+  color: #37474f;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cfd8dc;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.form-row input:focus {
+  outline: none;
+  border-color: #3f51b5;
+}
+
+button {
+  padding: 12px 24px;
+  background: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #303f9f;
+}
+
+button.del {
+  background: #e53935;
+  color: white;
+}
+
+button.del:hover {
+  background: #c62828;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+th,
+td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #37474f;
+  color: white;
+  font-weight: 500;
+}
+
+tr:nth-child(even) {
+  background: #fcfcfc;
+}
+
+footer {
+  background: #263238;
+  color: #eceff1;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 5px 0;
+}
